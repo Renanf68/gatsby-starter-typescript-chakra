@@ -1,16 +1,10 @@
 import React from "react"
-import { PageProps, Link, graphql } from "gatsby"
+import { PageProps, Link } from "gatsby"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/Header"
+import SEO from "../components/Seo"
 
-type DataProps = {
-  site: {
-    buildTime: string
-  }
-}
-
-const IndexPage: React.FC<PageProps<DataProps>> = ({ data, path }) => (
+const IndexPage: React.FC<PageProps> = ({ data, path }) => (
   <Layout>
     <SEO title="Home" />
     <h1>Gatsby supports TypeScript by default!</h1>
@@ -19,11 +13,3 @@ const IndexPage: React.FC<PageProps<DataProps>> = ({ data, path }) => (
 )
 
 export default IndexPage
-
-export const query = graphql`
-  {
-    site {
-      buildTime(formatString: "YYYY-MM-DD hh:mm a z")
-    }
-  }
-`

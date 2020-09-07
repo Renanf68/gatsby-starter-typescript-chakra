@@ -1,8 +1,18 @@
+const siteTitle = "gatsby-starter-typescript"
+const siteDescription = "A Gatsby starter with TypeScript and chakra UI."
+const siteAuthor = "@gojutin"
+const siteUrl = "https://localhost:8000"
+const siteImage = `${siteUrl}/images/gatsby-icon.png`
+const siteKeywords = ["gatsby", "typescript", "starter", "javascript", "react"]
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: siteTitle,
+    description: siteDescription,
+    author: siteAuthor,
+    url: siteUrl,
+    keywords: siteKeywords,
+    image: siteImage,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

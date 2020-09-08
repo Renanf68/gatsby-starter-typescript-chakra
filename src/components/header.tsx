@@ -8,22 +8,19 @@ interface PageProps {
 }
 
 const Header: React.FC<PageProps> = ({ siteTitle }) => (
-  console.log(siteTitle),
-  (
-    <Flex
-      as="header"
-      justify="center"
-      align="center"
-      bg="primary"
-      padding="3.2rem 0"
-    >
-      <Container tag="div" direction="column">
-        <Heading as="h1" size="lg" color="gray.50">
-          <Link to="/">{siteTitle}</Link>
-        </Heading>
-      </Container>
-    </Flex>
-  )
+  <Flex
+    as="header"
+    justify="center"
+    align="center"
+    bg="primary"
+    padding="3.2rem 0"
+  >
+    <Container tag="div" direction="column">
+      <Heading as="h1" size="lg" color="gray.50">
+        <Link to="/">{siteTitle}</Link>
+      </Heading>
+    </Container>
+  </Flex>
 )
 
 export default Header

@@ -10,6 +10,7 @@ const Footer: React.FC = () => {
       justify="center"
       align="center"
       padding="0.4rem 0"
+      bg="secondary"
     >
       <Container tag="div" direction="row">
         © {new Date().getFullYear()}, Desenvolvido por{" "}

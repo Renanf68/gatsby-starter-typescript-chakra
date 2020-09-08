@@ -1,4 +1,4 @@
-const siteTitle = "gatsby-starter-typescript"
+const siteTitle = "gatsby-starter-typescript-chakra"
 const siteDescription = "A Gatsby starter with TypeScript and chakra UI."
 const siteAuthor = "@gojutin"
 const siteUrl = "https://localhost:8000"

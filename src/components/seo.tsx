@@ -111,6 +111,11 @@ const SEO: React.FC<SEOProps> = props => {
 
   const linkData = [
     {
+      rel: "stylesheet",
+      href:
+        "https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap",
+    },
+    {
       rel: "shortcut icon",
       href: "favicon.ico",
     },

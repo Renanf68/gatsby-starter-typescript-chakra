@@ -1,7 +1,11 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { ThemeProvider } from "@chakra-ui/core"
 
 import Header from "./Header"
+import customTheme from "../styles/theme"
+import Main from "./Main"
+import Footer from "./Footer"
 
 interface PageProps {
   children?: any
@@ -18,15 +22,11 @@ const Layout: React.FC<PageProps> = ({ children }) => {
     }
   `)
   return (
-    <>
+    <ThemeProvider theme={customTheme}>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
-    </>
+      <Main>{children}</Main>
+      <Footer />
+    </ThemeProvider>
   )
 }
 

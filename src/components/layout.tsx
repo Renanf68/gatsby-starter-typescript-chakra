@@ -7,6 +7,8 @@ import customTheme from "../styles/theme"
 import Main from "./Main"
 import Footer from "./Footer"
 
+import "../styles/global.css"
+
 interface PageProps {
   children?: any
 }

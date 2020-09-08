@@ -8,14 +8,7 @@ interface PageProps {
 
 const Main: React.FC<PageProps> = ({ children }) => {
   return (
-    <Flex
-      w="100%"
-      minH="100vh"
-      justify="center"
-      align="flex-start"
-      bg="secondary"
-      as="main"
-    >
+    <Flex w="100%" justify="center" align="flex-start" bg="secondary" as="main">
       <Container tag="div" direction="column">
         {children}
       </Container>

@@ -6,6 +6,8 @@ const Footer: React.FC = () => {
   return (
     <Flex
       as="footer"
+      position="absolute"
+      bottom="0"
       w="100%"
       justify="center"
       align="center"
